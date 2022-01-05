@@ -7,8 +7,8 @@
 
 import Foundation
 
-let openWeatherURL: String = "https://api.openweathermap.org/data/2.5/"
-let oneCall: String = "onecall"
+let OPEN_WEATHER_ENDPOINT: String = "https://api.openweathermap.org/data/2.5/"
+let ONE_CALL: String = "onecall"
 
 /// API keyは自分のものに変更する
-let appid: String = ""
+let APP_ID: String = ""

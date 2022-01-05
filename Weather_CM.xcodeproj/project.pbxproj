@@ -14,6 +14,15 @@
 		E46F452C2785232000538DBB /* Weather_CMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F452B2785232000538DBB /* Weather_CMTests.swift */; };
 		E46F45362785232000538DBB /* Weather_CMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45352785232000538DBB /* Weather_CMUITests.swift */; };
 		E46F45382785232000538DBB /* Weather_CMUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45372785232000538DBB /* Weather_CMUITestsLaunchTests.swift */; };
+		E46F45452785267700538DBB /* OneCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45442785267700538DBB /* OneCall.swift */; };
+		E46F45462785267700538DBB /* OneCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45442785267700538DBB /* OneCall.swift */; };
+		E46F45472785267700538DBB /* OneCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45442785267700538DBB /* OneCall.swift */; };
+		E46F454B27852D1E00538DBB /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454A27852D1E00538DBB /* Fetcher.swift */; };
+		E46F454C27852D1E00538DBB /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454A27852D1E00538DBB /* Fetcher.swift */; };
+		E46F454D27852D1E00538DBB /* Fetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454A27852D1E00538DBB /* Fetcher.swift */; };
+		E46F454F27852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
+		E46F455027852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
+		E46F455127852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,9 @@
 		E46F45312785232000538DBB /* Weather_CMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Weather_CMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46F45352785232000538DBB /* Weather_CMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_CMUITests.swift; sourceTree = "<group>"; };
 		E46F45372785232000538DBB /* Weather_CMUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather_CMUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E46F45442785267700538DBB /* OneCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCall.swift; sourceTree = "<group>"; };
+		E46F454A27852D1E00538DBB /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
+		E46F454E27852E5800538DBB /* AppProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +106,10 @@
 		E46F45192785231F00538DBB /* Weather_CM */ = {
 			isa = PBXGroup;
 			children = (
+				E46F454E27852E5800538DBB /* AppProperties.swift */,
 				E46F451A2785231F00538DBB /* Weather_CMApp.swift */,
 				E46F451C2785231F00538DBB /* ContentView.swift */,
+				E46F454827852C6D00538DBB /* Model */,
 				E46F451E2785232000538DBB /* Assets.xcassets */,
 				E46F45202785232000538DBB /* Preview Content */,
 			);
@@ -125,6 +139,23 @@
 				E46F45372785232000538DBB /* Weather_CMUITestsLaunchTests.swift */,
 			);
 			path = Weather_CMUITests;
+			sourceTree = "<group>";
+		};
+		E46F454827852C6D00538DBB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E46F454A27852D1E00538DBB /* Fetcher.swift */,
+				E46F454927852C8700538DBB /* Entity */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E46F454927852C8700538DBB /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E46F45442785267700538DBB /* OneCall.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +288,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F454B27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F454F27852E5800538DBB /* AppProperties.swift in Sources */,
 				E46F451D2785231F00538DBB /* ContentView.swift in Sources */,
 				E46F451B2785231F00538DBB /* Weather_CMApp.swift in Sources */,
+				E46F45452785267700538DBB /* OneCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +300,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F45462785267700538DBB /* OneCall.swift in Sources */,
 				E46F452C2785232000538DBB /* Weather_CMTests.swift in Sources */,
+				E46F454C27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F455027852E5800538DBB /* AppProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +311,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F454D27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F455127852E5800538DBB /* AppProperties.swift in Sources */,
 				E46F45362785232000538DBB /* Weather_CMUITests.swift in Sources */,
 				E46F45382785232000538DBB /* Weather_CMUITestsLaunchTests.swift in Sources */,
+				E46F45472785267700538DBB /* OneCall.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
