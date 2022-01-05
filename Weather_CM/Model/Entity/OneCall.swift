@@ -35,16 +35,16 @@ struct RequestOneCall {
     /// metric (通常はこれ)
     /// imperial
     /// デフォルトがstandardなのでmetricを指定する
-    let units: String
+    let units: String?
     
     /// 言語 optional
-    let lang: String
+    let lang: String?
     
     /// latitude, longitude, appidのみ必須
     /// excludeのデフォルトはnil
     /// unitsのデフォルトはmetric
     /// langのデフォルトはja
-    init (lat: String, lon: String, appid: String, exclude: String? = nil, units: String = "metric", lang: String = "ja"){
+    init (lat: String, lon: String, appid: String, exclude: String? = nil, units: String? = "metric", lang: String? = "ja"){
         
         self.lat = lat
         self.lon = lon
