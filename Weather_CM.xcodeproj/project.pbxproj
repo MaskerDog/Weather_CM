@@ -23,6 +23,12 @@
 		E46F454F27852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
 		E46F455027852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
 		E46F455127852E5800538DBB /* AppProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F454E27852E5800538DBB /* AppProperties.swift */; };
+		E46F45552785362700538DBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45542785362700538DBB /* MainView.swift */; };
+		E46F45562785362700538DBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45542785362700538DBB /* MainView.swift */; };
+		E46F45572785362700538DBB /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45542785362700538DBB /* MainView.swift */; };
+		E46F45592785363700538DBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45582785363700538DBB /* MainViewController.swift */; };
+		E46F455A2785363700538DBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45582785363700538DBB /* MainViewController.swift */; };
+		E46F455B2785363700538DBB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46F45582785363700538DBB /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,8 @@
 		E46F45442785267700538DBB /* OneCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneCall.swift; sourceTree = "<group>"; };
 		E46F454A27852D1E00538DBB /* Fetcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fetcher.swift; sourceTree = "<group>"; };
 		E46F454E27852E5800538DBB /* AppProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProperties.swift; sourceTree = "<group>"; };
+		E46F45542785362700538DBB /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		E46F45582785363700538DBB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,7 @@
 		E46F45192785231F00538DBB /* Weather_CM */ = {
 			isa = PBXGroup;
 			children = (
+				E46F45532785361300538DBB /* MainView */,
 				E46F454E27852E5800538DBB /* AppProperties.swift */,
 				E46F451A2785231F00538DBB /* Weather_CMApp.swift */,
 				E46F451C2785231F00538DBB /* ContentView.swift */,
@@ -156,6 +165,15 @@
 				E46F45442785267700538DBB /* OneCall.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		E46F45532785361300538DBB /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				E46F45542785362700538DBB /* MainView.swift */,
+				E46F45582785363700538DBB /* MainViewController.swift */,
+			);
+			path = MainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F45592785363700538DBB /* MainViewController.swift in Sources */,
 				E46F454B27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F45552785362700538DBB /* MainView.swift in Sources */,
 				E46F454F27852E5800538DBB /* AppProperties.swift in Sources */,
 				E46F451D2785231F00538DBB /* ContentView.swift in Sources */,
 				E46F451B2785231F00538DBB /* Weather_CMApp.swift in Sources */,
@@ -303,6 +323,8 @@
 				E46F45462785267700538DBB /* OneCall.swift in Sources */,
 				E46F452C2785232000538DBB /* Weather_CMTests.swift in Sources */,
 				E46F454C27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F455A2785363700538DBB /* MainViewController.swift in Sources */,
+				E46F45562785362700538DBB /* MainView.swift in Sources */,
 				E46F455027852E5800538DBB /* AppProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,7 +333,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46F455B2785363700538DBB /* MainViewController.swift in Sources */,
 				E46F454D27852D1E00538DBB /* Fetcher.swift in Sources */,
+				E46F45572785362700538DBB /* MainView.swift in Sources */,
 				E46F455127852E5800538DBB /* AppProperties.swift in Sources */,
 				E46F45362785232000538DBB /* Weather_CMUITests.swift in Sources */,
 				E46F45382785232000538DBB /* Weather_CMUITestsLaunchTests.swift in Sources */,

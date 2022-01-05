@@ -12,9 +12,6 @@ import Foundation
 /// ex) https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
 ///
 struct RequestOneCall {
-    /// URL
-    let url: URL
-    
     // Geographical coordinates
     /// latitude 緯度 ex)35.39291572 required
     let lat: String
@@ -47,11 +44,7 @@ struct RequestOneCall {
     /// excludeのデフォルトはnil
     /// unitsのデフォルトはmetric
     /// langのデフォルトはja
-    /// URLが無効ならばnil
-    init? (url: String, lat: String, lon: String, appid: String, exclude: String? = nil, units: String = "metric", lang: String = "ja"){
-        
-        guard let url = URL(string: url) else { return nil }
-        self.url = url
+    init (lat: String, lon: String, appid: String, exclude: String? = nil, units: String = "metric", lang: String = "ja"){
         
         self.lat = lat
         self.lon = lon
@@ -63,7 +56,12 @@ struct RequestOneCall {
 }
 
 /// レスポンス用(json)
-struct ResponseOneCall: Decodable {
+struct ResultOneCall: Decodable {
+    // 逆ジオ用
+    let lat: Double
+    let lon: Double
+    
+    let current: Current
     struct Current: Decodable {
         /// 計測時間 Unix, UTC
         let dt: Int
